@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-UnamedClassExpression-Redeclaration</title>
+</head>
+<body>
+    <h1>JavaScript-UnamedClassExpression-Redeclaration</h1>
+    <h2><i>Class expression allow us to re-declare the class with same name, but only once.
+        if we re-declare more than one it will throw an error.
+    </i></h2>
+
+    <script>
+        var User = class{
+            getData(id,name){
+                document.writeln("ID: "+id+" Name: "+name+"<br/>");
+            }        
+        }
+
+        var u1 = new User();
+        u1.getData(110,'UserOne');
+
+        var User = class{
+            getSecondData(id,name){
+                document.writeln("ID: " + id + " Name: " + name);
+            }
+        }
+
+        var u1 = new User();
+        u2.getSecondData(111,'UserTwo');
+
+        var User = class{
+            getSecondData(id,name){
+                document.writeln("ID: " + id + " Name: " + name);
+            }
+        }
+
+        var u2 = new User();
+        u2.getSecondData(112,'UserThree');
+
+    </script>
+</body>
+</html>

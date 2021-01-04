@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Class-Redeclaration</title>
+</head>
+<body>
+    <h1>JavaScript-Class-Redeclaration</h1>
+    <h2><i>We can not redeclare the class, If try to redeclare the class it will throw an error</i></h2>
+    <script>
+        class User{
+            getData(id,name){
+                document.writeln('ID: '+id+" Name: "+name);
+            }
+        }
+        var u1 = new User();
+        u1.getData(101,'Karan');
+
+        // Redeclaration Of Class USer
+        class User{
+            constructor(){
+                document.writeln('This is second class with name User');
+            }
+        }
+
+    </script>
+</body>
+</html>

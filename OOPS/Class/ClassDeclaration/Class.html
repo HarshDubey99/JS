@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Class</title>
+</head>
+<body>
+    <h1>JavaScript-Class</h1>
+    <script>
+        // 1-Component: Class Declaration
+
+        // Declaring Class
+        class User{
+            // Initializing objects
+            constructor(id,name){
+                this.id=id;
+                this.name=name;                
+            }
+
+            // Declaring Method
+            Details(){
+                document.writeln(this.id + " "+this.name+"<br/>");
+            }
+        }
+
+        // Passing Objects to the variable
+        var u1 = new User(101,'Rahul');
+
+        // Calling Methods
+        u1.Details();
+    </script>
+</body>
+</html>

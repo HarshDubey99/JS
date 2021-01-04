@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Class-Hoisting</title>
+</head>
+<body>
+    <h1>Class-Hoisting</h1>
+    <h2><i>We can not invoke class before Declaration, If we do that it is called "Hoisting"</i></h2>
+    <script>
+        // Invoking Class Before Declaration
+        var u1=new User();
+        u1.getDetail(101,'Rahul');
+
+        class User{
+            getDetail(id,name){
+                document.writeln('ID: '+id+" Name: "+name);
+            }
+        }
+
+    </script>
+</body>
+</html>

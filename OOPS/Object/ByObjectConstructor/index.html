@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-Object</title>
+</head>
+<body>
+    <h1>Creating Object Using Object Constructor</h1>
+    <script>
+        function user(id,name){
+            this.id=id;
+            this.name=name;
+        }
+
+        u=new user(101,'Kiran');
+
+        document.writeln("Type: ", typeof (u), ' Name: user');
+        document.writeln("<br/>DATA: ", u.name, "|", u.id);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-NamedClassExpression</title>
+</head>
+<body>
+    <h1>JavaScript-NamedClassExpression</h1>
+    <script>
+        var User = class USER{
+            getData(id,name){
+                document.writeln("ID: ",id," Name: ",name);
+            }
+        }
+
+        var u1 = new User();
+        u1.getData(101,'Kartik');
+
+        USER.getData(110,'Karan'); // It Will Throw An Error
+    </script>
+</body>
+</html>

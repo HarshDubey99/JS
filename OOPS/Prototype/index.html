@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ProtoType</title>
+</head>
+<body>
+    <h1>Javascript - Prototype</h1>
+    <script>
+       function user(id,name){
+           this.id=id;
+           this.name=name;
+       }
+
+        user.prototype.fullData=function(){
+            return this.id+" "+this.name;
+        }
+
+        var u1=new user(101,'Kartik');
+
+        document.writeln(u1.fullData());        
+    </script>
+</body>
+</html>

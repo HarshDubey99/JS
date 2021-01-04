@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Object</title>
+</head>
+<body>
+    <h1>Object Method - obj.assign()</h1>
+    <script>
+        const o1 = {
+            a:10,
+            b:20,
+        }
+
+        const o2 = Object.assign( {c:30,d:40},o1);
+
+        document.writeln("Object-1: ",o1.a," Type: ",typeof(o1));
+        document.writeln("<br/>Object-1: ",o1.b," Type: ",typeof(o1));
+
+        document.writeln("<br/><br/>Object-2: ",o2.a," Type: ",typeof(o2));
+        document.writeln("<br/>Object-2: ",o2.b," Type: ",typeof(o2));
+        document.writeln("<br/>Object-2: ",o2.c," Type: ",typeof(o2));
+        document.writeln("<br/>Object-2: ",o2.d," Type: ",typeof(o2));
+    </script>
+</body>
+</html>
